@@ -1,0 +1,32 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.515), rgba(0, 0, 0, 0.471)), url("/assets/img/background.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.login-top{
+    width: 100vw;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 3% 1%;
+    display: flex;
+    align-items: center;
+}
+.login-top img{
+    width: 15%;
+}
+.login-box{
+    background-color: rgba(0, 0, 0, 0.688);
+    width: 450px;
+    height: 550px;
+    border-radius: 15px;
+    padding: 50px;
+    margin: 0% 10%;
+}
+
+.small-text{
+    font-size: 90%;
+}
+
+.form-control{
+    box-shadow: none !important;
+}

@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: black;   
+}
+.netflix-padding-left {
+    padding-left: 57px;
+}
+
+.netflix-padding-right {
+    padding-right: 57px;
+}
+
+.netflix-navbar {
+    /* background-color: #0c0c0c; */
+    position: fixed !important;
+    width: 100vw;
+    z-index: 1000;
+    transition: background 0.2s linear;
+}
+
+.netflix-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.netflix-row .left {
+    width: max-content;
+}
+
+.netflix-row .right {
+    width: max-content;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.netflix-dropdown-box {
+    display: none;
+}
+
+.netflix-dropdown {
+    background-color: transparent;
+    color: rgb(232, 232, 232);
+    border: none;
+    font-size: 12px;
+}
+
+.netflix-dropdown-box .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.768);
+    font-size: 12px !important;
+    color: #fff !important;
+    margin-left: -95px;
+    border-top: 3px solid #fff;
+    margin-top: 15px !important;
+}
+
+.netflix-dropdown-box .dropdown-menu .dropdown-item {
+    color: rgba(255, 255, 255, 0.763);
+    text-align: center;
+    width: 250px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.netflix-dropdown-box .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.121);
+    color: #fff;
+}
+
+.netflix-nav {
+    display: block;
+    align-items: center;
+}
+
+.netflix-nav button {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.656);
+    border: none;
+    font-size: 13px;
+}
+
+.netflix-nav button:hover {
+    color: #fff;
+}
+
+i {
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.netflix-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.nav-item {
+    list-style: none;
+}
+/* cart */
+.cart{
+    right: 0;
+    top: 0;
+    background-color: rgb(37, 37, 37);
+    height: 100vh;
+    width: 30%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    position: fixed;
+    z-index: 1001;
+}
+.itemcart{
+    border-bottom: 1px solid gray;
+    padding: 1rem 0;
+}
+.itemcart h6{
+    font-size: 12px;
+    
+}
+.itemcart h5{
+    font-size: 14px;
+}
+.headcart{
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+}
+.price p{
+    margin-top: 4.2rem;
+}
+.remove{
+    text-decoration: underline;
+    color: rgb(167, 166, 166);
+}
+.remove:hover{
+    color: gray;
+}
+
+/*scroll*/
+ h7,.item h6:hover{
+    opacity: 0.6;
+}
+.scroll{
+    background-color: rgb(37, 37, 37);
+    height: 100vh;
+    width: 28%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+}
+.section1 .item img:hover{
+    opacity: 0.7;
+}
+.nav{
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+.nav h6, .title a:hover{
+    opacity: 0.7;
+}
+.btnicon{
+    margin-right: 6rem;
+    
+}
+.btniconsmall{
+    display: none;
+}
+.titlenav{
+    background-color: rgb(43, 42, 42);
+    display: none;
+} 
+
+.footer {
+    background-color: black;
+    position: relative;
+    padding: 30px;
+    line-height: 1.5;
+
+}
+
+ul {
+    list-style: none;
+    font-size: 100%;
+    color: rgba(255, 255, 255, 0.367);
+    font-weight: 100;
+}
+
+.li-footer:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.service-btn {
+    background-color: transparent;
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 0.367);
+    border: 1px solid rgba(255, 255, 255, 0.367);
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.copy-right {
+    font-size: 15px;
+    font-weight: 200;
+    color: rgb(249, 14, 14);
+    margin-left: 28px;
+}
+@media (max-width: 767px) {
+    .title, .btnicon{
+        display: none;
+    }
+    .titlenav, .btniconsmall{
+        display: block;
+    }
+    .btniconsmall{
+        margin-right: 2rem;
+        margin-left: auto;
+    }
+    .cart, .scroll{
+        width: 50%;
+    }
+}
+
+@media(max-width:767.98px){
+    .netflix-padding-left{
+        padding-left: 10px !important;
+    }
+    
+    .netflix-padding-right{
+        padding-right: 10px !important;
+    }
+
+    .netflix-dropdown-box{
+        display: block !important;
+    }
+
+    .netflix-nav{
+        display: none !important;
+    }
+
+    i{
+        font-size: 12px;
+        cursor: pointer;
+        padding: 5px !important;
+    }
+
+    .netflix-profile img{
+        margin-right: -10px ;
+        margin-top: 5px;
+    }
+
+    .navbar-brand img{
+        width: 43px;
+    }
+
+    .navbar{
+       padding-top: unset !important;
+       padding-bottom: unset !important;
+    }

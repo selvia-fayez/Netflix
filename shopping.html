@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Shopping</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    -->
+    <!-- JQuery -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/shopping.css" />
+   
+  </head>
+  <body>
+    <div class="w-100">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg fixed-top netflix-navbar netflix-padding-left netflix-padding-right"
+      >
+        <div class="container-fluid">
+          <div class="netflix-row">
+            <section class="left d-flex align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/netflix-logo.png" alt="" />
+              </a>
+
+              <!-- Dropdown -->
+              <div class="netflix-dropdown-box dropdown">
+                <button
+                  class="netflix-dropdown dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Home</a></li>
+                  <li><a class="dropdown-item" href="#">TV Shows</a></li>
+                  <li><a class="dropdown-item" href="#">Movies</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> News & Popular </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">My List</a></li>
+                  <li><a class="dropdown-item" href="#">Shop</a></li>
+                </ul>
+              </div>
+
+              <!-- Tabs -->
+              <div class="netflix-nav">
+                <section>
+                  <button><a class="dropdown-item" href="home.html">Home</a></button>
+                  <button>Movies</button>
+                  <button>Series</button>
+                  <button>TV Shows</button>
+                  <button>News & Popular</button>
+                  <button>My List</button>
+                  <button>Shop</button>
+                </section>
+              </div>
+            </section>
+
+            <section class="right d-flex align-items-center">
+              <i class="bi bi-search"></i>
+              <i
+                class="bi bi-bell-fill"
+                style="padding-right: 30px !important"
+              ></i>
+              <section class="netflix-profile">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    style="color: #fff"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./assets/img/avatar2.jpg" width="50px" alt="" />
+                  </a>
+                  <ul
+                    class="dropdown-menu pull-right dropdown-menu-dark dropdown-menu-lg-end"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="login.html">confirm</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="index.html"
+                        >Log Off
+                        <i class="fa fa-sign-out" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </li>
+              </section>
+              <a class="carticon">
+                <i class="fa fa-cart-shopping"></i>
+              </a>
+            </section>
+          </div>
+        </div>
+      </nav>
+      <div class="text-white p-3 cart">
+        <div class="Mycart row">
+          <div class="headcart row col">
+            <div class="col-10 font-weight-bolder">My Cart (2)</div>
+            <div class="col-2 close">
+              <a class="text-white"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+          </div>
+
+          <div class="itemcart mt-3 row w-100">
+            <div class="col-4 pr-2">
+              <img
+                src="https://netflix-shop.imgix.net/products/HFCRaglanTee_959x.png?v=1660071493&auto=compress,format"
+                class="w-100"
+              />
+            </div>
+            <div class="caption text-white col-6 pl-0 pr-0">
+              <h5 class="font-weight-bold">The Hellfire Club Shirt</h5>
+              <h6>Butcher Billy Artist Series</h6>
+              <h6>Weight 2.0 lb</h6>
+              <div class="d-flex flex-row align-items-center">
+                <button
+                  class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                >
+                  <a class="text-white"><i class="fas fa-minus"></i></a>
+                </button>
+                <input
+                  id="form1"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                  class="form-control form-control-sm bg-transparent text-white"
+                  style="width: 50px"
+                />
+
+                <button
+                  class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                >
+                  <a class="text-white"><i class="fas fa-plus"></i></a>
+                </button>
+              </div>
+            </div>
+            <div class="col-2 price p-0">
+              <a class="remove">Remove</a>
+              <p class="font-weight-bold">$30.00</p>
+            </div>
+          </div>
+          <div class="itemcart mt-3 row w-100">
+            <div class="col-4 pr-2">
+              <img
+                src="https://netflix-shop.imgix.net/products/elevenfunkov2image1_959x.png?v=1670056910&auto=compress,format"
+                class="w-100"
+              />
+            </div>
+            <div class="caption text-white col-6 pl-0 pr-0">
+              <h5 class="font-weight-bold">The Hellfire Club Shirt</h5>
+              <h6>Butcher Billy Artist Series</h6>
+              <h6>Weight 0.5 lb</h6>
+              <div class="d-flex flex-row align-items-center">
+                <button
+                  class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                >
+                  <a class="text-white"><i class="fas fa-minus"></i></a>
+                </button>
+                <input
+                  id="form1"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                  class="form-control form-control-sm bg-transparent text-white"
+                  style="width: 50px"
+                />
+
+                <button
+                  class="btn btn-link px-2"
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                >
+                  <a class="text-white"><i class="fas fa-plus"></i></a>
+                </button>
+              </div>
+            </div>
+            <div class="col-2 price p-0">
+              <a class="remove">Remove</a>
+              <p class="font-weight-bold">$12.00</p>
+            </div>
+          </div>
+          <div class="total row w-100 m-2 mt-4">
+            <h6 class="col-9">Subtotal</h6>
+            <h6 class="col-3 font-weight-bold">$42</h6>
+          </div>
+          <button class="btn btn-danger w-100">Checkout</button>
+        </div>
+      </div>
+      <div class="section1">
+        <picture>
+          <source
+            srcset="
+              https://netflix-shop.imgix.net/files/mobile-1080x1920_1790x.jpg?v=1671423491&auto=compress,format
+            "
+            media="(max-width:960px)"
+          />
+          <img
+            src="https://netflix-shop.imgix.net/files/desktop-1920x1080_c4ab636d-2fcb-4604-9fda-30f994b9f9b0_1440x.jpg?v=1671423491&auto=compress,format"
+            style="display: block; width: 100%"
+          />
+        </picture>
+      </div>
+      <div class="section2 row">
+        <div class="item col-md-3 col-sm-6 g-3 pb-sm-3">
+          <img
+            class="w-100"
+            style="transition: all 0.1s ease"
+            src="https://netflix-shop.imgix.net/files/under-25_e62bc5fe-3af0-42a7-b5e7-4bc4fa337754_1796x.jpg?v=1668967380&auto=compress,format"
+          />
+        </div>
+        <div class="item col-md-3 col-sm-6 g-3 pb-sm-3">
+          <img
+            class="w-100"
+            style="transition: all 0.1s ease"
+            src="https://netflix-shop.imgix.net/files/Untitled-gifts-1_1796x.jpg?v=1668937627&auto=compress,format"
+          />
+        </div>
+        <div class="item col-md-3 col-sm-6 g-3">
+          <img
+            class="w-100"
+            style="transition: all 0.1s ease"
+            src="https://netflix-shop.imgix.net/files/under-100_1796x.jpg?v=1668416462&auto=compress,format"
+          />
+        </div>
+        <div class="item col-md-3 col-sm-6 g-3">
+          <img
+            class="w-100"
+            style="transition: all 0.1s ease"
+            src="https://netflix-shop.imgix.net/files/under-preme_1796x.jpg?v=1668416462&auto=compress,format"
+          />
+        </div>
+      </div>
+      <div class="section3 carousel container">
+        <div class="owl-carousel owl-theme py-5">
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/uglysweatermain_1918x.png?v=1668470346&auto=compress,format"
+              alt=""
+            />
+
+            <br />
+            <h4>Apparel</h4>
+            <h6>Stranger Things x Kyle Lambert Unisex Premium Tee [Grey]</h6>
+            <p>$30.00</p>
+          </div>
+
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/StrangerThingsAttackPeterDemogorgonPrintmain_1918x.png?v=1667512442&auto=compress,format
+                "
+              alt=""
+            />
+            <br />
+            <h4>Apparel</h4>
+            <h6>Stranger Things x Kyle Lambert Unisex Premium Tee [Grey]</h6>
+            <p>$30.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/StrangerThingsxKyleLambertUnisexPremiumTee_Grey_rear_1918x.png?v=1667602469&auto=compress,format
+                "
+              alt=""
+            />
+            <br />
+            <h4>Apparel</h4>
+            <h6>Stranger Things x Kyle Lambert Unisex Premium Tee [Grey]</h6>
+            <p>$30.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/StrangerThingsxKyleLambertsportgreyrear_1918x.png?v=1667601726&auto=compress,format
+                "
+              alt=""
+            />
+            <br />
+            <h4>Apparel</h4>
+            <h6>Stranger Things x Kyle Lambert Unisex Premium Tee [Grey]</h6>
+            <p>$30.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/StrangerThingsxKyleLambertUnisexPremiumTee_Black_rear_1918x.png?v=1667602294&auto=compress,format
+                "
+              alt=""
+            />
+            <br />
+            <h4>Apparel</h4>
+            <h6>Stranger Things x Kyle Lambert Unisex Premium Tee [Grey]</h6>
+            <p>$30.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/StrangerThingsxKyleLambertcarbongreyrear_1918x.png?v=1667601318&auto=compress,format
+                "
+              alt=""
+            />
+            <br />
+            <h4>Apparel</h4>
+            <h6>Stranger Things x Kyle Lambert Unisex Premium Tee [Grey]</h6>
+            <p>$30.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/StrangerThingsxKyleLambertcharcoalrear_1918x.png?v=1667601516&auto=compress,format
+                "
+              alt=""
+            />
+            <br />
+            <h4>Apparel</h4>
+            <h6>Stranger Things x Kyle Lambert Unisex Premium Tee [Grey]</h6>
+            <p>$30.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/StrangerThingsxKyleLambertwhitelogorear_1918x.png?v=1667601095&auto=compress,format
+                "
+              alt=""
+            />
+            <br />
+            <h4>Apparel</h4>
+            <h6>Stranger Things x Kyle Lambert Unisex Premium Tee [Grey]</h6>
+            <p>$30.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/StrangerThingsxKyleLambertwhitelogorear_1918x.png?v=1667601095&auto=compress,format
+                "
+              alt=""
+            />
+            <br />
+            <h4>Apparel</h4>
+            <h6>Stranger Things x Kyle Lambert Unisex Premium Tee [Grey]</h6>
+            <p>$30.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/StrangerThingsxKyleLambertwhitelogorear_1918x.png?v=1667601095&auto=compress,format
+                "
+              alt=""
+            />
+            <br />
+            <h4>Apparel</h4>
+            <h6>Stranger Things x Kyle Lambert Unisex Premium Tee [Grey]</h6>
+            <p>$30.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section4 container py-5">
+        <div class="row content">
+          <div class="col-md-6 pb-5">
+            <div class="item">
+              <img
+                src="https://netflix-shop.imgix.net/files/ap-2-up_2880x.jpg?v=1668146944&auto=compress,format"
+                alt=""
+                class="w-100"
+              />
+              <div class="itemLayer"></div>
+            </div>
+          </div>
+          <div class="col-md-6 pb-5">
+            <div class="item">
+              <img
+                src="https://netflix-shop.imgix.net/files/Grupo-2-up_2880x.jpg?v=1668146944&auto=compress,format"
+                alt=""
+                class="w-100"
+              />
+              <div class="itemLayer"></div>
+              <div class="itemCaption">
+                <h4 class="font-weight-bolder">Stranger Things X Chocotoy</h4>
+                <h5>Shop Now</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pb-5">
+            <div class="item">
+              <img
+                src="https://netflix-shop.imgix.net/files/2-UP-Desktop-1_2880x.jpg?v=1668931898&auto=compress,format"
+                alt=""
+                class="w-100"
+              />
+              <div class="itemLayer"></div>
+              <div class="itemCaption">
+                <h2 class="font-weight-bolder">Squid Game Be@r Bricks</h2>
+                <h3>Shop Now</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pb-5">
+            <div class="item">
+              <img
+                src="https://netflix-shop.imgix.net/files/2-UP-Desktop-2_890697c1-521a-4443-be73-7ec873f1c7ab_2880x.jpg?v=1668932556&auto=compress,format"
+                alt=""
+                class="w-100"
+              />
+              <div class="itemLayer"></div>
+              <div class="itemCaption">
+                <h2 class="font-weight-bolder">Holiday Stockings</h2>
+                <h3>Shop Now</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section5 overflow-hidden py-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="item">
+              <img
+                src="https://netflix-shop.imgix.net/files/st-fest-sbp-desktop_2880x.jpg?v=1668147954&auto=compress,format"
+                class="w-100"
+                alt=""
+              />
+              <div class="itemCaption">
+                <h2 class="black font-weight-bolder">
+                  Surfer Boy Pizza Box Bundle
+                </h2>
+                <h3 class="black">Mmm... Smells Like Pineapple</h3>
+                <button class="btn bgRed text-white">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section6 container py-5">
+        <div class="row content">
+          <div class="col-md-6">
+            <div class="item">
+              <img
+                src="https://netflix-shop.imgix.net/files/MB--D1---2-UP-Desktop_4c4383f7-d3c1-438b-9c1d-886445b96d8e_2880x.jpg?v=1667725821&auto=compress,format"
+                alt=""
+                class="w-100"
+              />
+              <div class="itemLayer"></div>
+              <div class="itemCaption">
+                <h2 class="font-weight-bolder">Moon Boot</h2>
+                <h3>Stranger Things Inspired</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item">
+              <img
+                src="https://netflix-shop.imgix.net/files/bcr-1--2-UP-Desktop_94a7350d-e8e3-455e-bf9c-5c62e8849dae_2880x.jpg?v=1668147204&auto=compress,format"
+                alt=""
+                class="w-100"
+              />
+              <div class="itemLayer"></div>
+              <div class="itemCaption">
+                <h2 class="font-weight-bolder">B.C. Rich</h2>
+                <h3>Full-Size Warlock & Mini Warlock</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section7 overflow-hidden py-5 text-white">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="item">
+              <img
+                src="https://netflix-shop.imgix.net/files/st-fest--desktop_2880x.jpg?v=1667727129&auto=compress,format"
+                class="w-100"
+                alt=""
+              />
+              <div class="itemCaption">
+                <h2 class="font-weight-bolder">
+                  Diving into Mid-Eighties Hawkins and Lenora Hills
+                </h2>
+                <h3>Mmm... Smells Like Pineapple</h3>
+                <button class="btn bgRed text-white">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section8 container py-5">
+        <div class="row content">
+          <div class="col-md-6">
+            <div class="item">
+              <img
+                src="https://netflix-shop.imgix.net/files/bb-d1-2-UP-Desktop_916f18bf-34aa-4992-bc75-24c717bd6e43_2880x.jpg?v=1667726233&auto=compress,format"
+                alt=""
+                class="w-100"
+              />
+              <div class="itemLayer"></div>
+              <div class="itemCaption">
+                <h2 class="font-weight-bolder">The Butcher Billy</h2>
+                <h3>Limited Edition Designs</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item">
+              <img
+                src="https://netflix-shop.imgix.net/files/hm-d1-2-UP-Desktop_938ab4c9-40e6-400f-b5c4-b3014576dd8f_2880x.jpg?v=1667726261&auto=compress,format"
+                alt=""
+                class="w-100"
+              />
+              <div class="itemLayer"></div>
+              <div class="itemCaption">
+                <h2 class="font-weight-bolder">Chief Jim Hopper</h2>
+                <h3>Hallmark Ornaments</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section9 overflow-hidden py-5">
+        <div class="item">
+          <img
+            src="https://netflix-shop.imgix.net/files/ST4_home-d_2880x.jpg?v=1653124585&auto=compress,format"
+            class="w-100"
+          />
+          <div class="itemCaption">
+            <h2 class="font-weight-bolder">Join Us in the Upside Down</h2>
+            <h6 class="font-weight-bolder">Season 4 Is Upon Us</h6>
+          </div>
+        </div>
+      </div>
+      <div class="section3 carousel container text-center">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/hfclunchboximage1_959x.png?v=1669749436&auto=compress,format"
+              alt=""
+            />
+            <br />
+            <h4>Home Goods</h4>
+            <h6>Stranger Things Hellfire club Tin Tote</h6>
+            <p>$22.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/piggybackshadowboxone_959x.png?v=1669050383&auto=compress,format"
+              alt=""
+            />
+            <br />
+            <h4>Wall Art</h4>
+            <h6>Stranger Things The Piggyback Shadowbox Art by Artovision</h6>
+            <p>$149.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/hellfiresack1_959x.png?v=1669229467&auto=compress,format%201x,"
+              alt=""
+            />
+
+            <br />
+            <h4>Collectibles</h4>
+            <h6>Hellfire club Christmas Santa Sack</h6>
+            <p>$25.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/fullcardcollections_959x.png?v=1669229448&auto=compress,format
+          "
+              alt=""
+            />
+            <br />
+            <h4>Collectibles</h4>
+            <h6>Stranger Things 8 Pack Christmas Card Bundle</h6>
+            <p>$20.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/piggybackshadowboxone_959x.png?v=1669050383&auto=compress,format"
+              alt=""
+            />
+            <br />
+            <h4>Wall Art</h4>
+            <h6>Stranger Things The Piggyback Shadowbox Art by Artovision</h6>
+            <p>$149.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/hfclunchboximage1_959x.png?v=1669749436&auto=compress,format"
+              alt=""
+            />
+            <br />
+            <h4>Home Goods</h4>
+            <h6>Stranger Things Hellfire club Tin Tote</h6>
+            <p>$22.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/piggybackshadowboxone_959x.png?v=1669050383&auto=compress,format"
+              alt=""
+            />
+            <br />
+            <h4>Wall Art</h4>
+            <h6>Stranger Things The Piggyback Shadowbox Art by Artovision</h6>
+            <p>$149.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/hellfiresack1_959x.png?v=1669229467&auto=compress,format%201x,"
+              alt=""
+            />
+
+            <br />
+            <h4>Collectibles</h4>
+            <h6>Hellfire club Christmas Santa Sack</h6>
+            <p>$25.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/fullcardcollections_959x.png?v=1669229448&auto=compress,format
+          "
+              alt=""
+            />
+            <br />
+            <h4>Collectibles</h4>
+            <h6>Stranger Things 8 Pack Christmas Card Bundle</h6>
+            <p>$20.00</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://netflix-shop.imgix.net/products/piggybackshadowboxone_959x.png?v=1669050383&auto=compress,format"
+              alt=""
+            />
+            <br />
+            <h4>Wall Art</h4>
+            <h6>Stranger Things The Piggyback Shadowbox Art by Artovision</h6>
+            <p>$149.00</p>
+          </div>
+        </div>
+        <a
+          href="collection.html"
+          class="btn bgRed text-white px-4 py-3 mb-5 bhover"
+        >
+          View Collection
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <div class="row">
+              <div class="col-md-3">
+                <ul>
+                  <li class="li-footer">Audio description</li>
+                  <li class="li-footer">Investor Relation</li>
+                  <li class="li-footer">Terms and Conditions</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li class="li-footer">Legal Notices</li>
+                  <li class="li-footer">Audio and Subtitle</li>
+                  <li class="li-footer">Media Center</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li class="li-footer">Privacy</li>
+                  <li class="li-footer">Contact Us</li>
+                  <li class="li-footer">Help Center</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li class="li-footer">Jobs</li>
+                  <li class="li-footer">Gift card</li>
+                  <li class="li-footer">Subscription</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10 mx-auto">
+            <div class="row">
+              <div class="col">
+                <p class="copy-right">:copyright: 1997-2022 Netflix</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Jquery -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"
+      ></script>
+      <!-- Owl Carousel -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+      ></script>
+        <!-- JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

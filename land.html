@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="icon" href="netflix.com.svg">
+  <link href="assets/img/netflix-logo2.png" rel="icon" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="land.css">
+
+</head>
+
+<body>
+  <div class="main-page">
+    <nav class="nav">
+      <img src="netflix.svg" alt="navlogo" class="brand-logo">
+      <ul class="right-container">
+
+        <li class="nav-item dropdown   btn btn-outline-light">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"><i
+              class="fa-solid fa-globe fa-sm"></i>English</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">العربية</a>
+            <a class="dropdown-item" href="#">English</a>
+
+          </div>
+        </li>
+
+        <li class="nav-items"> <button type="button" name="button" class=" btn btn sign-button">Sign-in</button></li>
+
+      </ul>
+    </nav>
+    <!-- header and para content -->
+    <div class="head-content">
+      <div class="primary">
+        <h1 class="heading1">Unlimited movies, TV shows and more.</h1>
+        <h3 class="heading2">Watch anywhere. Cancel anytime.</h3>
+      </div>
+      <div class="secondary">
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <input type="email" name="" value="" placeholder="Email address" class="mail">
+        <button type="button" class="btn mail-btn" name="button"> <a class="dropdown-item" href="login.html">Get started
+            <i class="fa-solid fa-angle-right fa-sm"></i>
+          </a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-tv">
+    <div class="col-lg-6 tv-text">
+      <h1 class="tv-heading">Enjoy on your TV.</h1>
+      <h3 class="tv-mini-heading">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+      </h3>
+    </div>
+    <div class="col-lg-6 tv">
+      <img src="./assets/img/tv.png" alt="tvImage" class="tv-image">
+      <video src="./assets/img/video-tv.m4v" autoplay poster="posterimage.jpg" class="video-tv" muted loop></video>
+    </div>
+  </div>
+
+  <div class="row row-tv">
+    <div class="col-lg-6 mobile">
+      <img src="./assets/img/mobile.jpeg" alt="mobile" class="mobile-image">
+      <div class="div-image">
+        <img src="./assets/img/stranger.png" alt="" class="stranger">
+
+        <div class="div-text">
+          <h4 class="stranger-head">Stranger things</h4>
+          <h5 class="stranger-para">Downloading...</h5>
+        </div>
+
+        <div class="right--contain">
+          <img src="./assets/img/download.gif" alt="download-GIF" class="gif" mute loop>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 mobile-text">
+      <h1 class="mobile-heading">Download your shows to watch offline.</h1>
+      <h3 class="mobile-mini-heading">Save your favourites easily and always have something to watch.</h3>
+    </div>
+  </div>
+
+
+  <div class="row row-monitor">
+    <div class="col-lg-6 tv-text">
+      <h1 class="tv-heading">Watch everywhere.</h1>
+      <h3 class="tv-mini-heading">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+    </div>
+    <div class="col-lg-6 tv">
+      <img src="./assets/img/monitor.png" alt="tvImage" class="monitor-image">
+      <video src="./assets/img/monitor-video.m4v" autoplay poster="posterimage.jpg" class="video-monitor" muted
+        loop></video>
+    </div>
+  </div>
+
+
+  <div class="row row-tv children">
+    <div class="col-lg-6 mobile">
+      <img src="./assets/img/children.png" alt="mobile-image" class="mobile-image child">
+    </div>
+    <div class="col-lg-6 mobile-text">
+      <h1 class="mobile-heading">Create profiles for children.</h1>
+      <h3 class="mobile-mini-heading">Send children on adventures with their favourite characters in a space made just
+        for them—free with your membership.</h3>
+    </div>
+  </div>
+
+  <!-- Questions sections -->
+
+  <h1 class="heading-last">Frequently Asked Questions</h1>
+  <!-- questions start from here -->
+
+  <div class="d-grid gap-2 col-6 mx-auto d-flex flex-column  mb-5   cart ">
+
+
+
+
+    <button class="collapsed  contactbtn btn  btn-dark rounded-0 collapsed text-start w-100 p-3"
+      data-bs-toggle="collapse" href="#collapseone">
+      What is Netflix? <i class="fa-thin fa-plus float-right "></i>
+    </button>
+    <div id="collapseone" class="collapse  text-white p-3 cart" data-bs-parent="#accordion">
+      <p>
+        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+        documentaries, and more on thousands of internet-connected devices.</p>
+      <p>
+        You can watch as much as you want, whenever you want without a single commercial – all for one low
+        monthly price. There's always something new to discover and new TV shows and movies are added every
+        week!</p>
+
+    </div>
+    <button class="collapsed  contactbtn btn  btn-dark rounded-0 collapsed text-start w-100 p-3"
+      data-bs-toggle="collapse" href="#collapseTwo">
+      How much does Netflix cost?<i class="fa-thin fa-plus"></i>
+    </button>
+    <div id="collapseTwo" class="collapse   text-white cart p-3" data-bs-parent="#accordion">
+      <p> Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+        monthly fee. Plans range from EGP120 to EGP200 a month. No extra costs, no contracts.</p>
+    </div>
+    <button class="collapsed  contactbtn btn  btn-dark rounded-0 collapsed text-start w-100 p-3"
+      data-bs-toggle="collapse" href="#collapsethree">
+      Where can i watch?<i class="fa-thin fa-plus"></i>
+    </button>
+    <div id="collapsethree" class="collapse   text-white p-3 cart" data-bs-parent="#accordion">
+
+      <p> Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+        netflix.com
+        from your personal computer or on any internet-connected device that offers the Netflix app,
+        including
+        smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+      <p>
+
+        You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to
+        watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+      </p>
+    </div>
+
+    <button class="collapsed  contactbtn btn  btn-dark rounded-0 collapsed text-start w-100 p-3"
+      data-bs-toggle="collapse" href="#collapsefour">
+      How do i cancel?<i class="fa-thin fa-plus "></i>
+    </button>
+    <div id="collapsefour" class="collapse  text-white cart p-3" data-bs-parent="#accordion">
+
+      <p> Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your
+        account
+        online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+    </div>
+    <button class="collapsed  contactbtn btn  btn-dark rounded-0 collapsed text-start w-100 p-3"
+      data-bs-toggle="collapse" href="#collapsefive">
+      What can I watch on Netflix?<i class="fa-thin fa-plus"></i>
+    </button>
+    <div id="collapsefive" class="collapse   text-white cart p-3" data-bs-parent="#accordion">
+      <p> Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+        Netflix
+        originals, and more. Watch as much as you want, anytime you want.</p>
+    </div>
+    <button class="collapsed  contactbtn btn  btn-dark rounded-0 collapsed text-start w-100 p-3"
+      data-bs-toggle="collapse" href="#collapsesix">
+      Is Netflix good for kids?<i class="fa-thin fa-plus"></i>
+    </button>
+    <div id="collapsesix" class="collapse  text-white cart p-3" data-bs-parent="#accordion">
+      <p> The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+        family-friendly TV shows and movies in their own space.</p>
+      <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content
+        kids can watch and block specific titles you don’t want kids to see.</p>
+    </div>
+
+
+  </div>
+
+
+  <div class="secondary sec-mail">
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <input type="email" name="" value="" placeholder="Email address" class="mail">
+    <button type="button" class="btn mail-btn " name="button"> Get started <i
+        class="fa-solid fa-angle-right fa-sm"></i></button>
+  </div>
+
+  <!-- Footer -->
+  <div class="container footer">
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-md-3">
+            <ul>
+              <li class="li-footer">Audio description</li>
+              <li class="li-footer">Investor Relation</li>
+              <li class="li-footer">Terms and Conditions</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li class="li-footer">Legal Notices</li>
+              <li class="li-footer">Audio and Subtitle</li>
+              <li class="li-footer">Media Center</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li class="li-footer">Privacy</li>
+              <li class="li-footer">Contact Us</li>
+              <li class="li-footer">Help Center</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li class="li-footer">Jobs</li>
+              <li class="li-footer">Gift card</li>
+              <li class="li-footer">Subscription</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10 mx-auto">
+        <div class="row">
+          <div class="col">
+            <p class="copy-right">© 1997-2022 Netflix</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 text-white">
+          <div><iframe width="420" height="315"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+            </iframe>
+          </div>
+          <div class="px-5 py-4">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="d-flex">
+                  <p class="fs-6 text-success">%99 match</p>
+                  <p class="fs-6 mx-2">2016</p>
+                  <p class="fs-6 mx-2">1 sa. 35 dk.</p>
+                </div>
+                <p>While searching for a new home, the Croods discover a walled-in paradise inhabited by the inventive
+                  Betterman family. Then it all goes bananas
+                </p>
+              </div>
+              <div class="col-md-4">
+                <p class="fs-6"><span class="text-muted">Nicolas Cage</span>Emma Stone &bull;Ryan Reynolds&bull;Ben
+                  Barnes </p>
+                <p class="fs-6"><span class="text-muted"> moive </span>Cloris Leachman
+                  Clark Duke
+                  Leslie Mann
+                  Peter Dinklage</p>
+              </div>
+            </div>
+          </div>
+          <div class="px-5 py-4">
+            <div class="row">
+              <h4>Wonderful moive</h4>
+              <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 bg-dark">
+                  <a href="#">
+                    <img src="assets/img/mini17.jpg" class="card-img-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <p>A bank robber just released from prison goes on a rampage to avenge his dead brother and is
+                      pursued by two relentless cops and an eccentric hit man.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 bg-dark">
+                  <a href="#">
+                    <img src="assets/img/mini17.jpg" class="card-img-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <p>A bank robber just released from prison goes on a rampage to avenge his dead brother and is
+                      pursued by two relentless cops and an eccentric hit man.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 bg-dark">
+                  <a href="#">
+                    <img src="assets/img/mini17.jpg" class="card-img-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <p>A bank robber just released from prison goes on a rampage to avenge his dead brother and is
+                      pursued by two relentless cops and an eccentric hit man.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 bg-dark">
+                  <a href="#">
+                    <img src="assets/img/mini17.jpg" class="card-img-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <p>A bank robber just released from prison goes on a rampage to avenge his dead brother and is
+                      pursued by two relentless cops and an eccentric hit man.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 bg-dark">
+                  <a href="#">
+                    <img src="assets/img/mini17.jpg" class="card-img-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <p>A bank robber just released from prison goes on a rampage to avenge his dead brother and is
+                      pursued by two relentless cops and an eccentric hit man.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 bg-dark">
+                  <a href="#">
+                    <img src="assets/img/mini17.jpg" class="card-img-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <p>A bank robber just released from prison goes on a rampage to avenge his dead brother and is
+                      pursued by two relentless cops and an eccentric hit man.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 bg-dark">
+                  <a href="#">
+                    <img src="assets/img/mini17.jpg" class="card-img-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <p>A bank robber just released from prison goes on a rampage to avenge his dead brother and is
+                      pursued by two relentless cops and an eccentric hit man.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 bg-dark">
+                  <a href="#">
+                    <img src="assets/img/mini17.jpg" class="card-img-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <p>A bank robber just released from prison goes on a rampage to avenge his dead brother and is
+                      pursued by two relentless cops and an eccentric hit man.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 bg-dark">
+                  <a href="#">
+                    <img src="assets/img/mini17.jpg" class="card-img-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <p>A bank robber just released from prison goes on a rampage to avenge his dead brother and is
+                      pursued by two relentless cops and an eccentric hit man.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JAVASCRIPT TAGS -->
+
+  <!--Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+  <script>
+    $('.contactbtn').click(function () {
+
+      $('.collapse').collapse('hide');
+    });
+  </script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"> </script>
+</body>
+
+</html>

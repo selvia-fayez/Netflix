@@ -1,0 +1,248 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #141414 !important;
+  overflow-x: hidden;
+  width: 100vw;
+  /* position: relative; */
+}
+
+.netflix-padding-left {
+  padding-left: 57px;
+}
+
+.netflix-padding-right {
+  padding-right: 57px;
+}
+
+.netflix-navbar {
+  /* background-color: #0c0c0c; */
+  position: fixed !important;
+  width: 100vw;
+  z-index: 1000;
+  transition: background 0.2s linear;
+}
+
+.netflix-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
+
+.netflix-row .left {
+  width: max-content;
+}
+
+.netflix-row .right {
+  width: max-content;
+}
+
+.navbar-brand img {
+  width: 100px;
+}
+
+.netflix-dropdown-box {
+  display: none;
+}
+
+.netflix-dropdown {
+  background-color: transparent;
+  color: rgb(232, 232, 232);
+  border: none;
+  font-size: 12px;
+}
+
+.netflix-dropdown-box .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.768);
+  font-size: 12px !important;
+  color: #fff !important;
+  margin-left: -95px;
+  border-top: 3px solid #fff;
+  margin-top: 15px !important;
+}
+
+.netflix-dropdown-box .dropdown-menu .dropdown-item {
+  color: rgba(255, 255, 255, 0.763);
+  text-align: center;
+  width: 250px;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+.netflix-dropdown-box .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.121);
+  color: #fff;
+}
+
+.netflix-nav {
+  display: block;
+  align-items: center;
+}
+
+.netflix-nav button {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.656);
+  border: none;
+  font-size: 13px;
+}
+.netflix-nav button:hover {
+  color: #fff;
+}
+
+i {
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.netflix-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+/* Video */
+
+.netflix-home-video {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.netflix-home-video video {
+  width: 100%;
+}
+
+.netflix-home-video .top {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, transparent, #000);
+}
+
+.netflix-home-video .bottom {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to bottom, transparent, #141414);
+}
+
+.netflix-home-video .content {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+}
+
+.netflix-home-video .content .left {
+  margin-left: 80px;
+}
+
+.netflix-home-video .content .left img {
+  margin-top: 15%;
+  width: 50%;
+}
+.slider1 {
+  position: relative;
+  top: -100px;
+  z-index: 500;
+}
+
+.slider2 {
+  position: relative;
+  top: 80px;
+  z-index: 400;
+}
+
+.slider3 {
+  position: relative;
+  top: 260px;
+  z-index: 300;
+}
+.card {
+  width: 100%;
+  background-color: #202020 !important;
+  border-radius: 4px;
+  transition: 0.2s linear;
+  margin: 3px;
+  position: relative;
+}
+
+.card:hover {
+  transform: scaleX(1.3) scaleY(1.3);
+  z-index: 9999 !important;
+}
+
+.card-body {
+  display: none;
+  padding: 10px 15px !important;
+  position: absolute;
+  background-color: #202020;
+  top: 120px;
+  width: 100%;
+}
+
+.card-icon {
+  color: #fff;
+  padding: 0px !important;
+  font-size: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card:hover > .card-body {
+  display: block;
+}
+.netflix-card-text {
+  font-size: 10px;
+}
+.tab-change-btn {
+  border: none;
+  width: 30px !important;
+  height: 4px !important;
+}
+.container-fluid {
+  padding: 0px 70px 0px 50px !important;
+}
+.footer {
+  position: relative;
+  margin-top: 550px;
+  margin-bottom: 80px;
+}
+ul {
+  list-style: none;
+  font-size: 100%;
+  color: rgba(255, 255, 255, 0.367);
+  font-weight: 100;
+}
+.li-footer:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.service-btn {
+  background-color: transparent;
+  margin-left: 30px;
+  color: rgba(255, 255, 255, 0.367);
+  border: 1px solid rgba(255, 255, 255, 0.367);
+  font-size: 15px;
+  font-weight: 100;
+}
+.copy-right {
+  font-size: 15px;
+  font-weight: 200;
+  color: rgb(249, 14, 14);
+  margin-left: 28px;
+}
